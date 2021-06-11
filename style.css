@@ -1,0 +1,13 @@
+img{
+    width:10px;
+    padding: 10;
+    border-radius: 50%
+}
+
+p{
+    font-family: Lucida Console;
+}
+ul{
+    font-size: 14;
+    font-family: Lucida Console;
+}

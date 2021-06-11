@@ -1,0 +1,26 @@
+{
+  "name": "ui_mgcns-1",
+  "version": "1.0.0",
+  "description": "Music Genre Classification using ML",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaduBlogger/UI_MGCnS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BaduBlogger/UI_MGCnS/issues"
+  },
+  "homepage": "https://github.com/BaduBlogger/UI_MGCnS#readme",
+  "devDependencies": {
+    "electron": "^13.1.2"
+  },
+  "dependencies": {
+    "electron-prebuilt": "^1.4.13",
+    "python-shell": "^3.0.0"
+  }
+}

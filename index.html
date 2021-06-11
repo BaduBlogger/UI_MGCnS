@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>
+            MGCnS
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {font-family: Arial;
+                background-color: #000;
+                color: white;
+            }
+            
+            /* Style the tab */
+            .tab {
+              overflow: hidden;
+              border: 1px solid #000;
+              background-color: #000;
+              text-align: center;
+              color: #ccc;
+            }
+            
+            /* Style the buttons inside the tab */
+            .tab button {
+              background-color: #000;
+              color:grey;
+              float: center;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              padding: 14px 16px;
+              transition: 0.3s;
+              font-size: 17px;
+            }
+            
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+              background-color:black;
+              color: white;
+            }
+            
+            /* Create an active/current tablink class */
+            .tab button.active {
+              background-color:#000;
+              color: white;
+            }
+            
+            /* Style the tab content */
+            .tabcontent {
+              display: none;
+              padding: 6px 12px;
+              border-top: none;
+            }
+
+            </style>
+            <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+            <button class="tablinks" onclick="openCity(event, 'Explore')">Explore</button>
+            <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+        </div>
+
+        <div id="London" class="tabcontent">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Explore" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p> 
+        </div>
+
+        <div id="About" class="tabcontent" style="padding-left: 30;padding-right: 30;">
+            <h2 style="font-family:Papyrus;text-align: center;">Music Genre Classification and Segregator</h2>
+            <p style="font-size: 15;">Project Guide : Prof. Shweta Koparde</p>
+            <img src="img_avatar.png" alt="Avatar" style="width:100px">
+
+            <p>Project Members :</p>
+            <img src="img_avatar.png" alt="Avatar" style="width:100px;"> 
+            <img src="img_avatar.png" alt="Avatar" style="width:100px;">
+            <img src="img_avatar.png" alt="Avatar" style="width:100px;">
+            <img src="img_avatar.png" alt="Avatar" style="width:100px;">
+
+
+            <p style="font-size: 14;">The proposed system includes a desktop application which is:</p>
+            <ul>
+                <li>Desktop Application</li>
+                <li>Classifies Genre</li>
+                <li>Stores it in Destination Folder</li>
+                <li>Uploads .Mp3 and .wav files</li>
+            </ul>
+        </div>
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+
+    </body>
+</html>
