@@ -44,15 +44,40 @@ body {font-family: Arial;
     border-top: none;
 }
 img{
-    width:10px;
     padding: 10;
     border-radius: 50%
 }
 
 p{
-    font-family: Lucida Console;
+    font-family: 'Times New Roman', Times, serif;
 }
 ul{
+
     font-size: 14;
-    font-family: Lucida Console;
+    font-family: 'Times New Roman', Times, serif;
+}
+#Mood{
+    font-size: 16px;
+    font-family: ;
+    transition-duration: 0.4s;
+    width: 35%;
+    height: 50px;
+    float: center;
+}
+#Mood:hover{
+    background-color: grey ;
+    color: #2f302f;
+    border: none;
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(248, 246, 246, 0.19);
+}
+#Genre{
+    font-size: 16px;
+    transition-duration: 0.4s;
+    width: 35%;
+    height: 50px;
+}
+#Genre:hover{
+    background-color: grey ; 
+    color: #2f302f;
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(248, 246, 246, 0.19);
 }
