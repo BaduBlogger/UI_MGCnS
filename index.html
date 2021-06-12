@@ -4,13 +4,14 @@
             MGCnS
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="load.js"></script>
     </head>
     <body>
         <div class="tab">
-            <button class="tablinks" onclick="openPage(event, 'Home')" id="defaultOpen">Home</button>
-            <button class="tablinks" onclick="openPage(event, 'Explore')">Explore</button>
+            <button class="tablinks" onclick="openPage(event, 'Home')" >Home</button>
+            <button class="tablinks" onclick="openPage(event, 'Explore')" id="defaultOpen">Explore</button>
             <button class="tablinks" onclick="openPage(event, 'About')">About</button>
         </div>
 
@@ -20,8 +21,10 @@
         </div>
 
         <div id="Explore" class="tabcontent">
-            <button id="Mood">Mood</button>
-            <button id="Genre">Genre</button>
+            <div >
+                <button id="Mood">🥰 Mood</button>
+                <button id="Genre">🎵 Genre</button>
+            </div>
         </div>
             
         <div id="About" class="tabcontent" >
