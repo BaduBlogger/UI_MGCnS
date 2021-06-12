@@ -9,12 +9,12 @@
     </head>
     <body>
         <div class="tab">
-            <button class="tablinks" onclick="openPage(event, 'London')">London</button>
+            <button class="tablinks" onclick="openPage(event, 'Home')" id="defaultOpen">Home</button>
             <button class="tablinks" onclick="openPage(event, 'Explore')">Explore</button>
             <button class="tablinks" onclick="openPage(event, 'About')">About</button>
         </div>
 
-        <div id="London" class="tabcontent">
+        <div id="Home" class="tabcontent">
             <h3>London</h3>
             <p>London is the capital city of England.</p>
         </div>
@@ -24,19 +24,38 @@
             <button id="Genre">Genre</button>
         </div>
             
-        <div id="About" class="tabcontent" style="padding-left: 30;padding-right: 30;">
+        <div id="About" class="tabcontent" >
             <h2 style="font-family:Papyrus;text-align: center;">Music Genre Classification and Segregator</h2>
-            <p style="font-size: 15;">Project Guide : Prof. Shweta Koparde</p>
-            <img src="img_avatar.png" alt="Avatar" style="width:100px">
+            <p style="font-size: 15;padding-left: 50;padding-top: 20;">Project Guide : Prof. Shweta Koparde</p>
+            <div style="padding-left: 50; padding-top: 20;">
+                <img src="img_avatar.png" alt="Project Guide" style="width:100px" style="padding-left: 50;">
+            </div>
+            <p style="padding-left: 50; padding-top: 20;">Project Members :</p>
+            <div class="row" style="padding-left: 50;">
+                <div class="column">
+                    <img src="img_avatar.png" alt="Project Members" style="width:100px;"> 
+                    <p class="name">Gauri N Basutkar</p>
+                    <p class="roll">(BECOMP-A02)</p>
+                </div>
+                <div class="column">
+                    <img src="img_avatar.png" alt="Project Members" style="width:100px;">
+                    <p class="name">Vaishnavi R Bhadgaonkar</p>
+                    <p class="roll">(BECOMP-A03)</p>
+                </div>
+                <div class="column">
+                    <img src="img_avatar.png" alt="Project Members" style="width:100px;">
+                    <p class="name">Kalyani N Patil</p>
+                    <p class="roll">(BECOMP-A52)</p>
+                </div >
+                <div class="column">
+                    <img src="img_avatar.png" alt="Project Members" style="width:100px;">
+                    <p class="name">Dhanashri D Gayke</p>
+                    <p class="roll">(BECOMP-A19)</p>
+                </div>
+            </div>
 
-            <p>Project Members :</p>
-            <img src="img_avatar.png" alt="Avatar" style="width:100px;"> 
-            <img src="img_avatar.png" alt="Avatar" style="width:100px;">
-            <img src="img_avatar.png" alt="Avatar" style="width:100px;">
-            <img src="img_avatar.png" alt="Avatar" style="width:100px;">
-
-            <p style="font-size: 14;">The proposed system includes a desktop application which is:</p>
-            <ul>
+            <p style="font-size: 14;padding-left: 50;padding-top: 20;">The proposed system includes a desktop application which is:</p>
+            <ul style="padding-left: 70">
                 <li>Desktop Application</li>
                 <li>Classifies Genre</li>
                 <li>Stores it in Destination Folder</li>

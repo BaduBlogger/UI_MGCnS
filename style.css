@@ -1,4 +1,5 @@
-body {font-family: Arial;
+body {
+    font-family: sans-serif;
     background-color: #000;
     color: white;
 }
@@ -44,17 +45,35 @@ body {font-family: Arial;
     border-top: none;
 }
 img{
-    padding: 10;
     border-radius: 50%
 }
 
-p{
-    font-family: 'Times New Roman', Times, serif;
+.column {
+    float: left;
+    width: 15%;
+    padding-left: 10px;
 }
+  
+  /* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.name{
+    text-align: left;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 14;
+}
+
 ul{
 
     font-size: 14;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
 #Mood{
     font-size: 16px;
@@ -80,4 +99,10 @@ ul{
     background-color: grey ; 
     color: #2f302f;
     box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(248, 246, 246, 0.19);
+}
+
+.roll{
+    font-family: sans-serif;
+    font-size: 12;
+    padding-left: 5;
 }
