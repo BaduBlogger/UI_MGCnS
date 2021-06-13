@@ -86,6 +86,7 @@ ul{
     width: 40%;
     height: 50px;
     font-size: 16;
+    margin-top: 50px;
     color: white;
     background-color: rgb(97, 96, 96);
     border: none;
@@ -108,16 +109,4 @@ ul{
 #Genre:hover{
     background-color: darkgrey;
     color:black;
-}
-
-.flex {
-    display: flex;
-  }
-  
-.center {
-    justify-content: center;
-}
-  
-button.margin-right {
-    margin-right: 20px;
 }

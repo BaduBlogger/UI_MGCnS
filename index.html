@@ -20,10 +20,16 @@
             <p>London is the capital city of England.</p>
         </div>
 
-        <div id="Explore" class="tabcontent">
-            <div >
-                <button id="Mood">🥰 Mood</button>
-                <button id="Genre">🎵 Genre</button>
+        <div id="Explore" class="tabcontent" >
+            <button id="Mood" style="margin-left: 100px;margin-right: 50px;">🥰 Mood</button>
+            <button id="Genre" style="margin-right: 100px;">🎵 Genre</button>
+
+            <b><p style="font-family: Courier;font-size: 20;padding-left: 100px;padding-top: 20;">All Songs :</p></b>
+            <div>
+                <title>run my python files</title>
+                <?PHP
+                    echo shell_exec("directory_struct.py");
+                ?>
             </div>
         </div>
             
